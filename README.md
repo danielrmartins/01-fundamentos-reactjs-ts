@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# Fundamentos de ReactJS com TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o código e exemplos abordados no estudo de fundamentos de ReactJS com TypeScript. O objetivo é fornecer uma base sólida para quem deseja iniciar com React utilizando TypeScript.
 
-Currently, two official plugins are available:
+## Conteúdos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Introdução ao ReactJS
+- Configuração do ambiente com TypeScript
+- Componentes e Props
+- Estado e Ciclo de Vida
+- Eventos e Manipulação de Formulários
+- Estilização com CSS Modules
+- Hooks básicos (useState, useEffect)
 
-## Expanding the ESLint configuration
+## Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js v14 ou superior
+- npm ou yarn
 
-- Configure the top-level `parserOptions` property like this:
+## Como executar o projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/danielrmartins/01-fundamentos-reactjs-ts.git
+   ```
+
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd 01-fundamentos-reactjs-ts
+
+3. Instale as dependências:
+  ```bash
+  yarn install ou npm install
+  ```
+4. Execute o projeto:
+  ```bash
+  npm run dev ou yarn start
+  ```
+## Estrutra do Projeto
+```plaintext
+├── public/             # Arquivos públicos
+├── src/                # Código-fonte do projeto
+│   ├── assets/         # Arquivos de mídia, imagens, etc.
+│   ├── components/     # Componentes reutilizáveis
+│   ├── App.tsx         # Componente principal
+│   └── index.tsx       # Ponto de entrada do React
+├── .gitignore          # Arquivos e pastas ignorados pelo Git
+├── package.json        # Configurações do npm/yarn
+├── tsconfig.json       # Configurações do TypeScript
+└── README.md           # Documentação do projeto
 ```
+## Licença
+Este projeto está licenciado sob a MIT License.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+
+
+
+
+
